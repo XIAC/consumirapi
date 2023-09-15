@@ -1,0 +1,15 @@
+<p>empleado componnente hijo!</p>
+<form>
+  <label>Nombre</label><br>
+  <input [(ngModel)]="empleadoEntidad.nombre" name="nombre"  placeholder="Ingrese nombre"/>
+  <br><br>
+  <label>Edad</label><br>
+  <input  [(ngModel)]="empleadoEntidad.edad" name="edad" placeholder="Ingrese edad"/>
+  <br><br>
+  <button type="button" (click)="agregarEmpleado()">Agregar</button>
+</form>
+<div>
+  {{empleadoEntidad.nombre}}
+  <br>
+  {{empleadoEntidad.edad}}
+</div>
