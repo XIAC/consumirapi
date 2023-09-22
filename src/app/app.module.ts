@@ -7,19 +7,30 @@ import { FormsModule } from '@angular/forms';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
-
+import { ChipModule } from 'primeng/chip';
+import { ButtonModule } from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FieldsetModule } from 'primeng/fieldset';
+import { CaterpiePokemonComponent } from './caterpie-pokemon/caterpie-pokemon.component';
+import { CardModule } from 'primeng/card';
 @NgModule({
   declarations: [
     AppComponent,
     EmpleadoComponent,
     ListaEmpleadoComponent,
-    PokemonComponent
+    PokemonComponent,
+    CaterpiePokemonComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChipModule,
+    ButtonModule,
+    BrowserAnimationsModule,
+    FieldsetModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

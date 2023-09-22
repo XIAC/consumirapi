@@ -8,7 +8,11 @@ import { Resultado } from '../modelos/resultado.model';
 export class ApiservicioService {
   URL_global = 'https://pokeapi.co/api/v2/';
   constructor(private http : HttpClient) { }
+
   getPokemones(){
     return this.http.get<Resultado>(this.URL_global+'pokemon');
+  }
+  getCaterpiePokemon(){
+    return this.http.get(this.URL_global+'pokemon/caterpie');
   }
 }

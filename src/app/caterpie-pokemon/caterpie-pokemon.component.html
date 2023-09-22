@@ -1,0 +1,12 @@
+<p-card header="{{caterpiePokemon?.name}}" subheader="{{caterpiePokemon?.order}}" [style]="{ width: '360px' }">
+  <ng-template pTemplate="header">
+      <img alt="Card" src="{{caterpiePokemon?.sprites?.front_default}}" />
+  </ng-template>
+  <p>
+      <!-- {{}} -->
+  </p>
+  <ng-template pTemplate="footer">
+      <p-button label="VER MAS" icon="pi pi-check"></p-button>
+      <p-button label="Cancelar" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
+  </ng-template>
+</p-card>
